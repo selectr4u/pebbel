@@ -31,4 +31,6 @@ it is _very_ simple. if i was to re-iterate i would definitely consider items on
 
 ## usage
 
-to use, pipe in raw bytecode into the program. for example `printf '\x02\x00\x00\x00\x00\x00\x00\x00\x0B\x07' | out/main` to `push 11`, `print` and then `halt`.
+to compile, use `cc src/vm/vm.c src/main.c -o out/pebbel -std=c99`
+
+to use, pipe in raw bytecode into the program. for example `printf '\x02\x00\x00\x00\x00\x00\x00\x00\x0B\x07' | out/pebbel` to `push 11`, `print` and then `halt`.
